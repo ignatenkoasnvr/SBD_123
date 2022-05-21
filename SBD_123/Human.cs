@@ -6,20 +6,8 @@ using System.Threading.Tasks;
 using static System.Console;
 namespace SBD_123
 {
-    public class Human
+    public abstract class Human
     {
-        //1 prop
-        //public string FirstName { get; set; }
-        //public string LastName { get; set; }
-        //public int Age { get; set; }
-        //public  Human() { }
-        //Human(string _FirstName, string _LastName, int _Age)
-        //{
-        //    FirstName = _FirstName;
-        //    LastName = _LastName;
-        //    Age = _Age;
-        //}
-        //2
         string firstname;
         string lastname;
         int age;
@@ -30,6 +18,8 @@ namespace SBD_123
             lastname = _lastName;
             age = _age;
         }
+      public abstract void Work();
+
         public virtual void Print()
         {
             WriteLine($" {firstname}  {lastname}  {age}");

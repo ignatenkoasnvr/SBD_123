@@ -27,6 +27,10 @@ namespace SBD_123
     {
       return base.ToString() + $"  {qualification} ";
     }
-
+    public override void Work()
+    {
+      base.Work();
+      WriteLine(" Кодю спагетти-код.");
+    }
   }
 }

@@ -28,5 +28,10 @@ namespace SBD_123
     {
       return base.ToString() + $"  {scientificDirection} ";
     }
+    public override void Work()
+    {
+      base.Work();
+      WriteLine(" Придумываю вечный двигатель.");
+    }
   }
 }

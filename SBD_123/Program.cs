@@ -24,12 +24,14 @@ namespace SBD_123
       foreach (Employee item in employees)
       {
         item.Print();
+        item.Work();
 
        // if (item is Manager) (item as Manager).ShowManager(); //3
        // if (item is Scientist) (item as Scientist).ShowScientist();
        // if (item is Specialist) (item as Specialist).ShowSpecialist();
         WriteLine("*************************************");
       }
+
 
       ReadKey();
     }

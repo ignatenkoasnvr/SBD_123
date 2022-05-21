@@ -29,5 +29,11 @@ namespace SBD_123
     {
       WriteLine($"Менеджер. Сфера деятельности: {activity}");
     }
+    public override void Work()
+    {
+      base.Work();
+      WriteLine(" Управляю бизнесом");
+    }
+
   }
 }
